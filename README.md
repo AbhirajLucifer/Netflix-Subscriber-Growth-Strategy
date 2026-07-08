@@ -44,3 +44,22 @@ The system is built as a self-contained pipeline partitioned into three sequenti
   ┌───────────────────────┐
   │ 3. SciPy Optimization │ ──► Constrained LP algorithm maximizes total ARPU
   └───────────────────────┘
+
+### Mathematical Optimization Formulation
+The framework uses standard linear programming vectors to model corporate financial bounds:
+
+$$\text{Maximize } Z = 1.8x_1 + 2.1x_2 + 0.9x_3$$
+
+$$\text{Subject to: } 0.6x_1 + 0.7x_2 + 0.2x_3 \le 1.5$$
+
+Where $x_1, x_2, x_3$ represent the scaling allocation intensities for AI Bundles, Regional Content, and Tier Pricing respectively—constrained strictly by a global **\$1.5B investment allocation cap**.
+
+---
+
+## 🚀 Getting Started
+
+### 1. Prerequisites
+Ensure you have Python 3.8+ installed along with the required analytical packages:
+
+```bash
+pip install numpy pandas scikit-learn scipy
