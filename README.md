@@ -63,3 +63,9 @@ Ensure you have Python 3.8+ installed along with the required analytical package
 
 ```bash
 pip install numpy pandas scikit-learn scipy
+```
+### 2. Repository Structure
+```text
+├── bundle_optimizer.py   # Main pipeline executable (Data Gen, Clustering, LP Optimization)
+└── README.md             # Repository Documentation
+python bundle_optimizer.py
