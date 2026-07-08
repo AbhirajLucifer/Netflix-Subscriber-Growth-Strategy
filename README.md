@@ -44,7 +44,7 @@ The system is built as a self-contained pipeline partitioned into three sequenti
   ┌───────────────────────┐
   │ 3. SciPy Optimization │ ──► Constrained LP algorithm maximizes total ARPU
   └───────────────────────┘
-
+```
 ### Mathematical Optimization Formulation
 The framework uses standard linear programming vectors to model corporate financial bounds:
 
