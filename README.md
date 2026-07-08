@@ -10,7 +10,7 @@ Inspired by subscription growth modeling frameworks targeted to achieve **+15% g
 ---
 
 ## 📊 Business Context & Strategy
-As core streaming markets near peak saturation, traditional pricing increases lose efficacy, leading to industry-wide churn inflation (e.g., reaching **3.8% quarterly churn**)[cite: 1]. To reverse this trend, this repository implements code tailored around three strategic growth levers[cite: 1]:
+As core streaming markets near peak saturation, traditional pricing increases lose efficacy, leading to industry-wide churn inflation (e.g., reaching **3.8% quarterly churn**). To reverse this trend, this repository implements code tailored around three strategic growth levers:
 
 1. **AI Personalized Bundles:** ML-driven recommendation and feature packaging[cite: 1].
 2. **Regional Content Expansion:** Capturing untapped emerging market cohorts[cite: 1].
@@ -44,25 +44,3 @@ The system is built as a self-contained pipeline partitioned into three sequenti
   ┌───────────────────────┐
   │ 3. SciPy Optimization │ ──► Constrained LP algorithm maximizes total ARPU
   └───────────────────────┘
-```
-### Mathematical Optimization Formulation
-The framework uses standard linear programming vectors to model corporate financial bounds:
-
-$$\text{Maximize } Z = 1.8x_1 + 2.1x_2 + 0.9x_3$$
-
-$$\text{Subject to: } 0.6x_1 + 0.7x_2 + 0.2x_3 \le 1.5$$
-
-Where $x_1, x_2, x_3$ represent the scaling allocation intensities for AI Bundles, Regional Content, and Tier Pricing respectively—constrained strictly by a global **\$1.5B investment allocation cap**.
-
----
-
-## 🚀 Getting Started
-
-1. Prerequisites
-Ensure you have Python 3.8+ installed along with the required analytical packages:
-
-```bash
-pip install numpy pandas scikit-learn scipy```
-
-├── bundle_optimizer.py   # Main pipeline executable (Data Gen, Clustering, LP Optimization)
-└── README.md             # Repository Documentation
