@@ -58,14 +58,11 @@ Where $x_1, x_2, x_3$ represent the scaling allocation intensities for AI Bundle
 
 ## 🚀 Getting Started
 
-### 1. Prerequisites
+1. Prerequisites
 Ensure you have Python 3.8+ installed along with the required analytical packages:
 
 ```bash
-pip install numpy pandas scikit-learn scipy
-```
-### 2. Repository Structure
-```text
+pip install numpy pandas scikit-learn scipy```
+
 ├── bundle_optimizer.py   # Main pipeline executable (Data Gen, Clustering, LP Optimization)
 └── README.md             # Repository Documentation
-python bundle_optimizer.py
