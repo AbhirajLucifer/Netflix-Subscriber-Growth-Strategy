@@ -26,5 +26,54 @@ Our engine segments users into four distinct programmatic profiles to feed speci
 ---
 
 ## 🛠️ Architecture & Technical Core
+[ Synthetic Subscriber Base ]
+│
+▼
+┌───────────────────────┐
+│ 1. Feature Scaler     │ -> Standardizes variance across skewed behavioral fields
+└───────────┬───────────┘
+▼
+┌───────────────────────┐
+│ 2. K-Means Clustering │ -> Automatically segments the user base into 4 Core Personas
+└───────────┬───────────┘
+▼
+┌───────────────────────┐
+│ 3. SciPy Optimization │ -> Constrained LP algorithm maximizes total ARPU
+└───────────────────────┘
+### Mathematical Optimization Formulation
+The framework uses standard linear programming vectors to model corporate financial bounds:
+
+$$\text{Maximize } Z = 1.8x_1 + 2.1x_2 + 0.9x_3$$
+
+$$\text{Subject to: } 0.6x_1 + 0.7x_2 + 0.2x_3 \le 1.5$$
+
+Where $x_1, x_2, x_3$ represent the scaling allocation intensities for AI Bundles, Regional Content, and Tier Pricing respectively—constrained strictly by a global **\$1.5B investment allocation cap**.
+
+---
+
+## 🚀 Getting Started
+
+### 1. Prerequisites
+Ensure you have Python 3.8+ installed along with the required analytical packages:
+```bash
+pip install numpy pandas scikit-learn scipy
+├── bundle_optimizer.py   # Main pipeline executable (Data Gen, Clustering, LP Optimization)
+├── README.md             # Repository Documentation
+
+python bundle_optimizer.py
+
+Initializing Subscription Analytics Engine...
+
+--- Identified Demographics Summary ---
+Emerging Market Viewer    0.40
+Family Household          0.25
+Urban Professional        0.20
+Budget Student            0.15
+
+--- Running Mathematical Revenue Optimization Framework ---
+Optimization Status: Optimal Portfolio Allocated Successfully.
+Allocated Intensity Multipliers -> AI Bundles: 1.00x | Regional Expansion: 1.00x | Tier Pricing: 1.00x
+Maximized Optimized Strategic Value Generation: $4.80B
+
 
 The system is built as a self-contained pipeline partitioned into three stages:
